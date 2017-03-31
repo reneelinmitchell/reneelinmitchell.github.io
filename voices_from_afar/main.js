@@ -6,9 +6,9 @@ $(window).scroll(function() {
 	// automatically gonna get called
 	console.log($(window).scrollTop());
 	// create a variable called breakpoint
-	var breakpoint = 100;
+	var breakpoint1 = 100;
 
-	if ($(window).scrollTop() >= breakpoint){
+	if ($(window).scrollTop() >= breakpoint1){
 		$('.container').css('visibility',
 			'visible').hide().fadeIn(2000);
 		// 1500 = 1.5 seconds
@@ -17,4 +17,16 @@ $(window).scroll(function() {
 		$(this).off('scroll')
 
 	}
+
+	var wrap = $("#wrap");
+
+	var breakpoint2 = $(this).scrollTop();
+	if ( breakpoint2 >= 120){
+        $('carousel-immigrants').css(position:'absolute');
+        $('slideFun1').css(z-index: '9999');  
+    }
+
+    else {
+        $('carousel-immigrants').css(position:'fixed');  
+    }   
 });

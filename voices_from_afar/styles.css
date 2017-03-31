@@ -6,13 +6,19 @@ html, body {
     min-height: 100%; 
 }
 
-nav {
+/*.container-fluid {
 	position: fixed;
-}
+}*/
 
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 999999999;
+}
 .carousel-immigrants {
 	height: 100vh;
 	margin: 0;
+	/*position: sticky;*/
 }
 
 .container {
@@ -34,5 +40,10 @@ nav {
 	font-size: 200px;
 	font-family: 'Nunito Sans', sans-serif;
 	text-shadow: 5px 1px rgba(0,0,0,0.7);
-	z-index: 99999;
+	z-index: 99;
+}
+
+.slideFun1 {
+	background-color: rgba(255,0,255,0.3);
+	height: 100vh;
 }
