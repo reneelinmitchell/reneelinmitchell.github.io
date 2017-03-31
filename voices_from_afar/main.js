@@ -8,7 +8,7 @@ $(window).scroll(function() {
 	// create a variable called breakpoint
 	var breakpoint1 = 100;
 
-	if ($(window).scrollTop() >= breakpoint1){
+	if ($(window).scrollTop() >= 100){
 		$('.container').css('visibility',
 			'visible').hide().fadeIn(2000);
 		// 1500 = 1.5 seconds
@@ -18,15 +18,15 @@ $(window).scroll(function() {
 
 	}
 
-	var wrap = $("#wrap");
+	// var wrap = $("#wrap");
 
-	var breakpoint2 = $(this).scrollTop();
-	if ( breakpoint2 >= 120){
-        $('carousel-immigrants').css(position:'absolute');
-        $('slideFun1').css(z-index: '9999');  
-    }
+	// var breakpoint2 = $(this).scrollTop();
+	// if ( breakpoint2 >= 120){
+ //        $('carousel-immigrants').css(position:'absolute');
+ //        $('slideFun1').css(z-index: '9999');  
+ //    }
 
-    else {
-        $('carousel-immigrants').css(position:'fixed');  
-    }   
+ //    else {
+ //        $('carousel-immigrants').css(position:'fixed');  
+ //    }   
 });
