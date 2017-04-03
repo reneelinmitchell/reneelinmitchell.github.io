@@ -11,6 +11,10 @@ $(window).scroll(function() {
 	if ($(window).scrollTop() >= 100){
 		$('.container').css('visibility',
 			'visible').hide().fadeIn(2000);
+		// $('.carousel-immigrants').css('position',
+		// 	'fixed');
+		// $('.slideFun1').css('z-index',
+		// 	'9999');
 		// 1500 = 1.5 seconds
 
 		// make this only run once; cause scroll is once

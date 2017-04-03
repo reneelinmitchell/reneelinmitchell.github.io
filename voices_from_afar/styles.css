@@ -1,9 +1,17 @@
 html, body {
 	position: relative;
+	padding: 0;
+	margin: 0;
 }
 
 #wrapper {
-    min-height: 100%; 
+	position: absolute;
+	height: 50%;
+	width: 100%;
+    min-height: 50%; 
+    /* this means that all the panels
+    take up the full width and height
+    of the screen :))))))) */
 }
 
 /*.container-fluid {
@@ -18,6 +26,8 @@ html, body {
 .carousel-immigrants {
 	height: 100vh;
 	margin: 0;
+	z-index: 999;
+	position: fixed;
 	/*position: sticky;*/
 }
 
@@ -43,7 +53,64 @@ html, body {
 	z-index: 99;
 }
 
-.slideFun1 {
+/*.slideFun1 {
 	background-color: rgba(255,0,255,0.3);
 	height: 100vh;
+	z-index: 99;
+}*/
+
+.panels {
+	position: relative;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* this is the first panel, which is fixed */
+/* .class vs #id */
+#a {
+	background: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* YOU CAN HAVE A NEGATIVE
+	Z-INDEX SO THAT ONE DIV
+	ALWAYS GOES UNDER ANOTHER DIV */
+	z-index: -99;
+}
+
+.aboutUs {
+	position: relative;
+	top: 40;
+	background-color: rgba(255,255,255,0.5);
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	padding-bottom: 60%; /* CHANGE LATER */
+}
+
+.aboutUs h1 {
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* the following is for the second panel
+after the first fixed panel, it 
+should get 100% top margin */
+
+#b {
+	margin-top: 100%;
+	background: yellow;
+}
+
+#c {
+	background: pink;
+}
+
+#d {
+	background: green;
 }
