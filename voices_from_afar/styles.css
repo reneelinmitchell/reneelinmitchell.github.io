@@ -21,7 +21,7 @@ html, body {
 .navbar {
 	position: sticky;
 	top: 0;
-	z-index: 999999999;
+	z-index: 999999999999;
 }
 .carousel-immigrants {
 	height: 100vh;
@@ -70,7 +70,7 @@ html, body {
 /* this is the first panel, which is fixed */
 /* .class vs #id */
 #a {
-	background: #eee;
+	background: url("pics/bricks.jpg");
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -78,6 +78,8 @@ html, body {
 	Z-INDEX SO THAT ONE DIV
 	ALWAYS GOES UNDER ANOTHER DIV */
 	z-index: -99;
+	height: 100vh;
+	min-height: 70%;
 }
 
 .aboutUs {
@@ -103,8 +105,8 @@ after the first fixed panel, it
 should get 100% top margin */
 
 #b {
-	margin-top: 100%;
-	background: yellow;
+	margin-top: 10%;
+	background: white;
 }
 
 #c {
