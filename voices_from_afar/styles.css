@@ -29,6 +29,7 @@ html, body {
 	z-index: 999;
 	position: fixed;
 	/*position: sticky;*/
+	visibility: visible;
 }
 
 .container {
@@ -106,7 +107,14 @@ should get 100% top margin */
 
 #b {
 	margin-top: 10%;
+	padding-top: 3%;
 	background: white;
+}
+
+#b h1 {
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 #c {
