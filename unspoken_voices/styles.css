@@ -98,7 +98,7 @@ html, body {
 	min-height: 70%;
 }
 
-.aboutUs, .volunteer-section {
+.aboutUs, .volunteer-section, .contact-section {
 	position: relative;
 	top: 40;
 	background-color: rgba(255,255,255,0.5);
