@@ -21,6 +21,7 @@ html, body {
 .navbar {
 	position: sticky;
 	top: 0;
+	left: 0;
 	z-index: 999999999999;
 }
 
@@ -97,7 +98,7 @@ html, body {
 	min-height: 70%;
 }
 
-.aboutUs {
+.aboutUs, .volunteer-section {
 	position: relative;
 	top: 40;
 	background-color: rgba(255,255,255,0.5);
@@ -137,7 +138,8 @@ div:hover {
 after the first fixed panel, it 
 should get 100% top margin */
 
-#b {
+#b, #d {
+	position: relative;
 	margin-top: 10%;
 	padding-top: 3%;
 	background: white;
@@ -149,14 +151,7 @@ should get 100% top margin */
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-#c {
-	background: rgba(255,255,255,0.5);
-}
-
-#d {
-	background: green;
-}
-
-#e {
-	background: blue;
+#c, #e {
+	position: relative;
+	background: #d3d3d3;
 }
