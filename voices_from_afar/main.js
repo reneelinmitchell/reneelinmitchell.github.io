@@ -6,11 +6,13 @@ $(window).scroll(function() {
 	// automatically gonna get called
 	console.log($(window).scrollTop());
 	// create a variable called breakpoint
-	var breakpoint = 100;
+	var breakpoint1 = 200;
+	var breakpoint2 = 260;
 
-	if ($(window).scrollTop() >= 100){
+	if ($(window).scrollTop() >= 200){
 		$('.container').css('visibility',
 			'visible').hide().fadeIn(2000);
+
 		// $('.carousel-immigrants').css('position',
 		// 	'fixed');
 		// $('.slideFun1').css('z-index',
@@ -21,31 +23,9 @@ $(window).scroll(function() {
 		$(this).off('scroll')
 
 	}
-	var breakpoint = 120;
-	
-	if ($(window).scrollTop() >= 120){
-		$('.carousel-immigrants').css('visibility',
-			'hidden').hide().fadeOut(2000);
-		// $('.carousel-immigrants').css('position',
-		// 	'fixed');
-		// $('.slideFun1').css('z-index',
-		// 	'9999');
-		// 1500 = 1.5 seconds
+ 
+});
 
-		// make this only run once; cause scroll is once
-		$(this).off('scroll')
-
-	}
-
-	// var wrap = $("#wrap");
-
-	// var breakpoint2 = $(this).scrollTop();
-	// if ( breakpoint2 >= 120){
- //        $('carousel-immigrants').css(position:'absolute');
- //        $('slideFun1').css(z-index: '9999');  
- //    }
-
- //    else {
- //        $('carousel-immigrants').css(position:'fixed');  
- //    }   
+$(document).ready(function() {
+   $('#aboutUs').localScroll({duration:800});
 });

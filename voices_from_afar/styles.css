@@ -23,6 +23,19 @@ html, body {
 	top: 0;
 	z-index: 999999999999;
 }
+
+.container-fluid {
+	display: inline-block;
+}
+
+.container-fluid li {
+	font-size: 1.75em;
+}
+
+.navBarimg, .nav {
+	display: inline;
+}
+
 .carousel-immigrants {
 	height: 100vh;
 	margin: 0;
@@ -32,7 +45,7 @@ html, body {
 	visibility: visible;
 }
 
-.container {
+.welcomeClass {
 	/*background-color: rgba(255,255,255,0.4);*/
 	margin: 5% 5% 5% 5%;
 	position: absolute;
@@ -40,11 +53,11 @@ html, body {
     bottom: 0;
     left: 0;
     right:0;
-    pointer-events: none;
+/*    pointer-events: none;*/
     visibility: hidden;
 }
 
-.container h1 {
+.welcomeClass h1 {
 	margin-top: 40%;
 	color: white;
 	text-align: center;
@@ -71,7 +84,8 @@ html, body {
 /* this is the first panel, which is fixed */
 /* .class vs #id */
 #a {
-	background: url("pics/bricks.jpg");
+	/*background: url("pics/bricks.jpg");*/
+	background-color: #d3d3d3;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -95,11 +109,29 @@ html, body {
 	padding-bottom: 60%; /* CHANGE LATER */
 }
 
-.aboutUs h1 {
+.navBarimg img {
+	width: 10%;
+}
+
+.aboutUs h1, .panels h1 {
 	text-align: center;
 	font-size: 5em;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
+.panels h1 {
+	padding-top: 5%;
+}
+
+/*.aboutUsHeader, .aboutUsText {
+	visibility: hidden;
+	-webkit-transition: visibility 2s;
+    transition: visibility 2s;
+}
+
+div:hover {
+	visibility: visible;
+}*/
 
 /* the following is for the second panel
 after the first fixed panel, it 
@@ -118,9 +150,13 @@ should get 100% top margin */
 }
 
 #c {
-	background: pink;
+	background: rgba(255,255,255,0.5);
 }
 
 #d {
 	background: green;
+}
+
+#e {
+	background: blue;
 }
