@@ -138,6 +138,16 @@ div:hover {
 after the first fixed panel, it 
 should get 100% top margin */
 
+.donate-section img {
+	width: 20%;
+	padding-left: 2%;
+}
+
+.unitedtoDonate img {
+	position: relative;
+	/*top: 100%;*/
+}
+
 #b, #d {
 	position: relative;
 	margin-top: 10%;
