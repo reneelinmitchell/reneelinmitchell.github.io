@@ -137,7 +137,8 @@ after the first fixed panel, it
 should get 100% top margin */
 
 .donate-section img {
-	width: 20%;
+	padding-top: 5%;
+	width: 30%;
 	padding-left: 5%;]
 }
 
