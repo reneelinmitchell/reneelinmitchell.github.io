@@ -104,6 +104,10 @@ html, body {
 	min-height: 50%;
 }
 
+.aboutUsText p{
+	font-size: 18px;
+}
+
 .navBarimg img {
 	width: 10%;
 }
